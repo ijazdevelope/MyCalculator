@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/calculator.css">
+    <title>Calculate</title>
+</head>
+
+<body>
+    <!-- <h1>calculate Practive</h1> -->
+    <div class="wrapper">
+        <div class="calculator">
+            <div class="header">
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+            </div>
+            <div class="body">
+                <div>
+                    <h1 id="output">0</h1>
+                    <p id="input"></p>
+                </div>
+            </div>
+            <div class="footer">
+                <div onclick="calculate('c')" class="symbol"><span>C</span></div>
+                <div onclick="calculate('ac')" class="symbol"><span>AC</span></div>
+                <div onclick="calculate('%')" class="symbol"><span>%</span></div>
+                <div onclick="calculate('/')" class="symbol"><span>/</span></div>
+                <div onclick="calculate('7')"><span>7</span></div>
+                <div onclick="calculate('8')"><span>8</span></div>
+                <div onclick="calculate('9')"><span>9</span></div>
+                <div onclick="calculate('*')" class="symbol"><span>x</span></div>
+                <div onclick="calculate('4')"><span>4</span></div>
+                <div onclick="calculate('5')"><span>5</span></div>
+                <div onclick="calculate('6')"><span>6</span></div>
+                <div onclick="calculate('-')" class="symbol"><span>-</span></div>
+                <div onclick="calculate('1')"><span>1</span></div>
+                <div onclick="calculate('2')"><span>2</span></div>
+                <div onclick="calculate('3')"><span>3</span></div>
+                <div onclick="calculate('+')" class="symbol"><span>+</span></div>
+                <div onclick="calculate('0')"><span>0</span></div>
+                <div onclick="calculate('00')"><span>00</span></div>
+                <div onclick="calculate('.')"><span>.</span></div>
+                <div onclick="calculate('=')" class="symbol-dark" data-key="83" id="btn"><span>=</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <audio data-key="65" src="sounds/crash.mp3"></audio> -->
+    <audio data-key="83" src="sounds/kick-bass.mp3"></audio>
+    <audio data-key="68" src="sounds/snare.mp3"></audio>
+    <audio data-key="70" src="sounds/tom-1.mp3"></audio>
+    <audio data-key="71" src="sounds/tom-2.mp3"></audio>
+    <audio data-key="72" src="sounds/tom-3.mp3"></audio>
+    <audio data-key="74" src="sounds/tom-4.mp3"></audio>
+    <audio data-key="75" src="sounds/snare.mp3"></audio>
+    <audio data-key="76" src="sounds/tom-1.mp3"></audio>
+</body>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.1.0/math.min.js"></script> -->
+<script src="./js/calculator.js"></script>
+
+</html>
